@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="grid wide">
+        <section class="row header-body">
+          <figure class="header-logo">LOGO</figure>
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar-item">
+                <a href="#" class="navbar-item__link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-item__link">Features</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-item__link">Details</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-item__link">Pricing</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#" class="navbar-item__link">
+                  Drop
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="subnav">
+                  <li class="subnav-item">
+                    <a href="#" class="subnav__item-link">Article Details</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="#" class="subnav__item-link">Terms Conditions</a>
+                  </li>
+                  <li class="subnav-item">
+                    <a href="#" class="subnav__item-link">Privacy Policy</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="cta">
+            <a href="#" class="btn btn-header">Log in</a>
+          </div>
+          <i class="fa fa-bars cta-icon"></i>
+        </section>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="grid wide">
+          <div class="row hero-body">
+            <div class="hero-content l-6 m-12 c-12">
+              <h1 class="hero-content__heading">Heading</h1>
+              <p class="hero-content__desc">Description</p>
+              <a href="#" class="btn btn-hero">Sign up for free</a>
+            </div>
+            <figure class="hero-images l-6 m-12 c-12">Img</figure>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section class="features">
+        <div class="grid wide">
+          <div class="features-top">
+            <h2 class="features-top__heading">Heading</h2>
+          </div>
+          <div class="features-body">
+            <section class="row features-list">
+              <!-- Item 1 -->
+              <article class="features-item l-4 m-12 c-12">
+                <div class="features-item__icon">
+                  <i class="fa-solid fa-headphones"></i>
+                </div>
+                <div class="features-content">
+                  <h4 class="features-content__heading">Title</h4>
+                  <p class="features-content__desc">Description</p>
+                </div>
+              </article>
+              <!-- Item 2 -->
+              <article class="features-item l-4 m-12 c-12">
+                <div class="features-item__icon">
+                  <i class="fa-solid fa-clipboard"></i>
+                </div>
+                <div class="features-content">
+                  <h4 class="features-content__heading">Title</h4>
+                  <p class="features-content__desc">Description</p>
+                </div>
+              </article>
+              <!-- Item 3 -->
+              <article class="features-item l-4 m-12 c-12">
+                <div class="features-item__icon">
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+                <div class="features-content">
+                  <h4 class="features-content__heading">Title</h4>
+                  <p class="features-content__desc">Description</p>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Popular -->
+      <section class="popular">
+        <div class="grid wide">
+          <div class="row popular-body">
+            <div class="popular-content l-6 m-12 c-12">
+              <h2 class="popular-content__heading">Heading</h2>
+              <p class="popular-content__desc">Description</p>
+              <a href="#" class="btn btn-popular">Modal</a>
+            </div>
+            <figure class="popular-images l-6 m-12 c-12">Img</figure>
+          </div>
+        </div>
+      </section>
+      <!-- Details -->
+      <section class="details">
+        <div class="grid wide">
+          <div class="row details-body">
+            <figure class="details-images col l-6 m-12 c-12">Img</figure>
+            <div class="details-content col l-6 m-12 c-12">
+              <h2 class="details-content__heading">Heading</h2>
+              <p class="details-content__desc">Description</p>
+              <ul class="details-list">
+                <li class="details-item">Item 1</li>
+                <li class="details-item">Item 2</li>
+                <li class="details-item">Item 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tesimonials -->
+      <section class="testimonials">
+        <div class="grid wide">
+          <div class="testimonials-top">
+            <h2 class="testimonials-top__heading">Senec et netus et malesu</h2>
+          </div>
+          <section class="testimonials-wrapper">
+            <i class="fa fa-arrow-left testimonials-left"></i>
+            <div class="row testimonials-list">
+              <!-- Testimonial 1 -->
+              <article class="testimonials-item col l-3 m-6 c-12">
+                <figure class="testimonials-images">Img</figure>
+                <div class="testimonials-content">
+                  <p class="testimonials-desc">Description</p>
+                  <p class="testimonials-author">Author</p>
+                </div>
+              </article>
+              <!-- Testimonial 2 -->
+              <article class="testimonials-item col l-3 m-6 c-12">
+                <figure class="testimonials-images">Img</figure>
+                <div class="testimonials-content">
+                  <p class="testimonials-desc">Description</p>
+                  <p class="testimonials-author">Author</p>
+                </div>
+              </article>
+              <!-- Testimonial 3 -->
+              <article class="testimonials-item col l-3 m-6 c-12">
+                <figure class="testimonials-images">Img</figure>
+                <div class="testimonials-content">
+                  <p class="testimonials-desc">Description</p>
+                  <p class="testimonials-author">Author</p>
+                </div>
+              </article>
+              <!-- Testimonial 4 -->
+              <article class="testimonials-item col l-3 m-6 c-12">
+                <figure class="testimonials-images">Img</figure>
+                <div class="testimonials-content">
+                  <p class="testimonials-desc">Description</p>
+                  <p class="testimonials-author">Author</p>
+                </div>
+              </article>
+            </div>
+            <i class="fa fa-arrow-right testimonials-right"></i>
+          </section>
+        </div>
+      </section>
+      <!-- Invitation -->
+      <section class="invitation">
+        <div class="grid wide">
+          <div class="invitation-content">
+            <h4 class="invitation-content__heading">Description</h4>
+            <a href="#" class="btn btn-invitation">Sign up for free</a>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing -->
+      <section class="pricing">
+        <div class="grid wide">
+          <div class="pricing-top">
+            <h2 class="pricing-top__heading col l-12 m-12 c-12">Heading</h2>
+          </div>
+          <section class="row pricing-cards">
+            <!-- Card 1 -->
+            <article class="pricing-card col l-4 m-12 c-12">
+              <div class="pricing-content">
+                <h4 class="pricing-content__title">Title</h4>
+                <ul class="pricing-content__desc">
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                </ul>
+                <strong class="pricing-content__amount">Free</strong>
+                <a href="#" class="btn btn-pricing">Sign up</a>
+              </div>
+            </article>
+            <!-- Card 2 -->
+            <article class="pricing-card col l-4 m-12 c-12">
+              <div class="pricing-content">
+                <h4 class="pricing-content__title">Title</h4>
+                <ul class="pricing-content__desc">
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                </ul>
+                <strong class="pricing-content__amount">Free</strong>
+                <a href="#" class="btn btn-pricing">Sign up</a>
+              </div>
+            </article>
+            <!-- Card 3 -->
+            <article class="pricing-card col l-4 m-12 c-12">
+              <div class="pricing-content">
+                <h4 class="pricing-content__title">Title</h4>
+                <ul class="pricing-content__desc">
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                  <li>Description</li>
+                </ul>
+                <strong class="pricing-content__amount">Free</strong>
+                <a href="#" class="btn btn-pricing">Sign up</a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+      <!-- Accordion -->
+      <section class="accordion">
+        <div class="grid wide">
+          <div class="accordion-top">
+            <h2 class="accordion-top__heading">Heading</h2>
+          </div>
+          <div class="accordion-body">
+            <section class="accordion-list">
+              <!-- Accordion 1 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <i class="fa-solid fa-caret-down accordion-header__icon"></i>
+                  <h4 class="accordion-header__heading">Title</h4>
+                </div>
+                <div class="accordion-content">
+                  <p class="accordion-inner-content">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit
+                    pellentesque. Pretium quam vulputate dignissim suspendisse
+                    in est ante in nibh. Lectus arcu bibendum at varius vel.
+                    Commodo odio aenean sed ading diam donec. Vitae elementum
+                    curabitur vitae nunc. Leo integer malesuada nunc vel risus
+                    notra
+                  </p>
+                </div>
+              </div>
+              <!-- Accordion 2 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <i class="fa-solid fa-caret-down accordion-header__icon"></i>
+                  <h4 class="accordion-header__heading">Title</h4>
+                </div>
+                <div class="accordion-content">
+                  <p class="accordion-inner-content">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit
+                    pellentesque. Pretium quam vulputate dignissim suspendisse
+                    in est ante in nibh. Lectus arcu bibendum at varius vel.
+                    Commodo odio aenean sed ading diam donec. Vitae elementum
+                    curabitur vitae nunc. Leo integer malesuada nunc vel risus
+                    notra
+                  </p>
+                </div>
+              </div>
+              <!-- Accordion 3 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <i class="fa-solid fa-caret-down accordion-header__icon"></i>
+                  <h4 class="accordion-header__heading">Title</h4>
+                </div>
+                <div class="accordion-content">
+                  <p class="accordion-inner-content">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit
+                    pellentesque. Pretium quam vulputate dignissim suspendisse
+                    in est ante in nibh. Lectus arcu bibendum at varius vel.
+                    Commodo odio aenean sed ading diam donec. Vitae elementum
+                    curabitur vitae nunc. Leo integer malesuada nunc vel risus
+                    notra
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="grid wide">
+        <div class="row footer-row">
+          <!-- Column 1 -->
+          <div class="footer-col col l-4 m-12 c-12">
+            <h4 class="footer-col__heading">Lorem Ipsum</h4>
+            <p class="footer-col__desc">
+              Proin ut felis purus vestibulum in orci molestie efficitur lacus
+              ac pellentesque elit fusce mollis laoreet lobortis nulla ac
+              efficitur lacus ac trep nore sim
+            </p>
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-col col l-4 m-12 c-12">
+            <h4 class="footer-col__heading">Links</h4>
+            <ul class="footer-col__list">
+              <li class="footer-col__item">
+                <a href="#" class="footer-col__link">
+                  Important: Terms & Conditions, Privacy Policy
+                </a>
+              </li>
+              <li class="footer-col__item">
+                <a href="#" class="footer-col__link">
+                  Useful: Colorpicker, Icon Library, Illustrations
+                </a>
+              </li>
+              <li class="footer-col__item">
+                <a href="#" class="footer-col__link">
+                  Menu: Home, Features, Details, Pricing
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-col col l-4 m-12 c-12">
+            <h4 class="footer-col__heading">Socials</h4>
+            <ul class="footer-social">
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+              </li>
+              <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="footer-contact">
+              Quam posuerei pellent esque vam
+              <a href="mailto: contact@name.com" class="footer-contact__link"
+                >contact@name.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-copyright col l-12 c-12">
+          Copyright © baoDeV 2023
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
